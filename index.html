@@ -18,13 +18,43 @@
 </header>
 <body>
    <div class = "wrapper">
-    <div class="topLeft">
-        <img src="./Assets/Austin.jpg"></img>
+    <div class="containerOne">
+        <div class="topLeft">
+            <img src="./Assets/Austin.jpg"></img>
+        </div>
+        <div class="topRight">
+            <p>Hello, I'm Austin Bridgewater. I am an up and coming software developer. I'm someone who enjoys turning complex problems into elegant logic. </p>
+            <br/>
+            <p>I'm a husband and father of two (three if you include our dog). They are my motivation and push me to be the best I can be each and every day.</p>
+            <br/>
+            <p></p>
+        </div>
+    </div>   
+    <div class="slider">
+        <h2>Click on a project to view the GitHub Repository</h2>
+        <div class="slideProjects">
+            <a href="https://github.com/AustinB25/SwordPlay.git"><img src="./Assets/ProjectPreviews/SwordPlayPreview.png"></a>                                             
+        </div>
+        <div class="slideProjects">
+            <a href="https://github.com/AustinB25/Shotby2Sisters.git"><img src="./Assets/ProjectPreviews/ShotBy2SistersHeader.png"></a>
+        </div>
     </div>
-    <div class="topRight">
-        <p>Hello, I'm Austin Bridgewater. I am an up and coming software developer. I'm someone who enjoys turing complex problems into elegant logic</p>
-    </div>
-    <div class="proficiencies">
+    <script>
+        var firstPos = 0;
+        Slider();
+        function Slider(){
+        var i;
+        var slides = document.getElementsByClassName("slideProjects");
+        for (i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        firstPos++
+        if(firstPos > slides.length){firstPos = 1}
+        slides[firstPos-1].style.display = "block";
+        setTimeout(Slider, 5000)
+        }
+    </script>
+     <div class="proficiencies">
         <div class="logos">
         <img src="./Assets/SkillsLogo/HTMLLogo.png">
         <img src="./Assets/SkillsLogo/CSSLogo.png">
@@ -33,19 +63,17 @@
         <img src="./Assets/SkillsLogo/PostmanLogo.png">
         </div>
     </div>
-    <div class="">
-                                       
-    </div>
-    </div>
     <div class=contactMe>
         <h1>If you're interested in working together leave your info!</h1>
         <div class="myInfo">
-            
+            <a href="https://github.com/AustinB25"><img src="./Assets/SocialLinks/GitHubLogo.png"></a>
+            <a href="https://www.linkedin.com/in/austin-bridgewater-91309221a/"><img src="./Assets/SocialLinks/LinkedInLogo.png"></a>
         </div>
         <div class="userContact">
             <form>
                 <ul>
-                    <li><input placeholder="Name"></li>
+                    <li><input placeholder="First name"></li>
+                    <li><input placeholder="Last name"></li>
                     <li><input placeholder="Email"></li>
                     <li><input placeholder="Your message"></li>
                     <li><button>Submit</button></li>

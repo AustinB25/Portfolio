@@ -9,32 +9,69 @@ body{
     width: 100%;
     height: 100%;
 }
+.containerOne{
+    display: flex;
+   
+}
+.topLeft{ 
+  margin: auto;
+}
 .topLeft img{
     width: 350px;
-    height: 350px;    
+    height: 350px; 
+    border-radius: 15em;     
+}
+.topRight{
+    margin: auto; 
+    width: 350px;    
+    background-color: khaki;
+    float: right;
 }
 .proficiencies{
     display: flex;
-    height: 250px;
+    height: 150px;
     width: 100%;
     background-color: whitesmoke;   
     border-radius: 3em;     
     }
 
 .logos{
-      display: inline-flex; 
-      width: 100%;     
+    display: inline-flex; 
+    width: 100%;     
 }
 .logos img{    
     margin: auto;
     height: 100px;
     width: 100px;         
 }
+.slider{
+    height: 550px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.slideProjects img{
+    height: 550px;
+    width: 100%;    
+}
 .footerBreak{
     margin: 1px;
     padding: 1px;
 }
-
+.myInfo{
+    background-color: lightgreen;
+    height: 100px;
+}
+.myInfo img{
+    height: 100px;
+    width: 100px;
+}
+.userContact{
+    background-color: lightpink;
+}
 span{
     color: black;
     font-size: 10px;
