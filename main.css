@@ -14,11 +14,21 @@ body{
     height: 350px;    
 }
 .proficiencies{
+    display: flex;
     height: 250px;
     width: 100%;
-    background-color: whitesmoke;
-    opacity: 25%;
-    border-radius: 3em;
+    background-color: whitesmoke;   
+    border-radius: 3em;     
+    }
+
+.logos{
+      display: inline-flex; 
+      width: 100%;     
+}
+.logos img{    
+    margin: auto;
+    height: 100px;
+    width: 100px;         
 }
 .footerBreak{
     margin: 1px;
