@@ -61,16 +61,25 @@ body{
     margin: 1px;
     padding: 1px;
 }
+.contactMe{
+    margin: 10px;
+    display: flex;
+}
+
 .myInfo{
     background-color: lightgreen;
-    height: 100px;
+    width:45%;
+    height: 500px;    
 }
 .myInfo img{
     height: 100px;
     width: 100px;
 }
 .userContact{
+    width: 45%;
     background-color: lightpink;
+    height: 500px;
+    float: right;
 }
 span{
     color: black;
