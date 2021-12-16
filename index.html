@@ -19,7 +19,7 @@
 <body>
    <div class = "wrapper">
     <div class="containerOne">
-        <div class="topLeft">
+        <div class="mainPic">
             <img src="./Assets/Austin.jpg"></img>
         </div>
         <div class="topRight">
@@ -33,10 +33,10 @@
     <div class="slider">
         <h2>Click on a project to view the GitHub Repository</h2>
         <div class="slideProjects">
-            <a href="https://github.com/AustinB25/SwordPlay.git"><img src="./Assets/ProjectPreviews/SwordPlayPreview.png"></a>                                             
+            <a href="https://github.com/AustinB25/SwordPlay.git" target="blank"><img src="./Assets/ProjectPreviews/SwordPlayPreview.png"></a>                                             
         </div>
         <div class="slideProjects">
-            <a href="https://github.com/AustinB25/Shotby2Sisters.git"><img src="./Assets/ProjectPreviews/ShotBy2SistersHeader.png"></a>
+            <a href="https://github.com/AustinB25/Shotby2Sisters.git" target="blank"><img src="./Assets/ProjectPreviews/ShotBy2SistersHeader.png"></a>
         </div>
     </div>
     <script>
@@ -66,27 +66,39 @@
     <div class="contactMe">
         
         <div class="myInfo">
-            <div class="myEmail">
-                <h3>If you want to send me a direct email</h3>
-            </div>
-            <div class="myPhoneNumber">
-                <h3>Feel free to shoot me a call or text. <br>
-                    If you reach my voicemail I'll get back to you within 48 hours.</h3>
-            </div>
-            <div class="socials">
-                <a href="https://github.com/AustinB25"><img src="./Assets/SocialLinks/GitHubLogo.png"></a>
-                <a href="https://www.linkedin.com/in/austin-bridgewater-91309221a/"><img src="./Assets/SocialLinks/LinkedInLogo.png"></a>
+            <div class="infoContainer">
+                <div class="myEmail">
+                    <h3>If you want to send me a direct email</h3>
+                </div>
+                <div class="myPhoneNumber">
+                    <h3>Feel free to shoot me a call or text. <br>
+                        If you reach my voicemail I'll get back to you within 48 hours.</h3>
+                </div>
+                
+                <div class="socials">
+                    <a href="https://github.com/AustinB25" target="blank"><img src="./Assets/SocialLinks/GitHubLogo.png"></a>
+                    <a href="https://www.linkedin.com/in/austin-bridgewater-91309221a/" target="blank"><img src="./Assets/SocialLinks/LinkedInLogo.png"></a>
+                </div>
             </div>
         </div>
         <div class="userContact">
-            <form>
-                <ul>
-                    <li><input placeholder="First name"></li>
-                    <li><input placeholder="Last name"></li>
-                    <li><input placeholder="Email"></li>
-                    <li><input placeholder="Your message"></li>
-                    <li><button>Submit</button></li>
-                </ul>
+            <form> 
+                <div class="inputContainer"> 
+                    <div class="nameInput">
+                        <h3>Your name</h3>              
+                        <input placeholder="First name" type="text">
+                        <input placeholder="Last name" type="text">
+                    </div>
+                    <div class="emailInput">
+                        <h3>your email</h3>
+                        <input placeholder="Email"type="text" >
+                    </div>
+                    <div class="messageInput">
+                        <h3>Te</h3>
+                        <input id="message" placeholder="Your message" type="text" >
+                    </div>
+                        <button>Submit</button>   
+                </div>             
             </form>
         </div>
     </div>

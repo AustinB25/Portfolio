@@ -15,11 +15,15 @@ body{
 }
 .topLeft{ 
   margin: auto;
+  
 }
-.topLeft img{
+.mainPic{
+    margin: auto;
+}
+.mainPic img{
     width: 350px;
     height: 350px; 
-    border-radius: 15em;     
+    border-radius: 15em;
 }
 .topRight{
     margin: auto; 
@@ -32,6 +36,7 @@ body{
     height: 150px;
     width: 100%;
     background-color: whitesmoke;   
+    opacity: .75;
     border-radius: 3em;     
     }
 
@@ -52,35 +57,79 @@ body{
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 70px;
+    
 }
 .slideProjects img{
-    height: 550px;
-    width: 100%;    
+    height: 450px;
+    width: 100%;   
+    
 }
 .footerBreak{
     margin: 1px;
     padding: 1px;
 }
 .contactMe{
-    margin: 10px;
+    margin-top:30px;    
     display: flex;
 }
 
 .myInfo{
-    background-color: lightgreen;
+   
     width:45%;
-    height: 500px;    
+    height: 500px; 
+    margin: auto;  
+    text-align: center;
+}
+.infoContainer{
+    width:50%;
+    height: 450px;
+    background-color: rgb(245, 245, 238);
+    margin: auto;
+    padding-top: 25px;
+    box-shadow:2px 2px 3px black;
+    border-radius: 1.25em;
 }
 .myInfo img{
     height: 100px;
     width: 100px;
 }
 .userContact{
-    width: 45%;
-    background-color: lightpink;
+    width: 45%;   
     height: 500px;
     float: right;
+    margin: auto;
+    text-align: center;
 }
+.inputContainer{
+    width:50%;
+    height: 450px;
+    background-color: rgb(245, 245, 238);
+    margin: auto;
+    padding-top: 25px;
+    box-shadow:2px 2px 3px black;
+    border-radius: 1.25em;
+}
+.inputContainer button{
+    margin-top: 15px;
+    height: 35px;
+    width: 100px;
+}
+.userContact ul{
+    list-style: none;
+}
+.nameInput input{
+    width: 39%;
+    height: 25px;
+}
+.emailInput input{
+    width:80%;
+    height: 25px;
+}
+.messageInput input{
+    width: 80%;
+    height: 150px;
+}
+
 span{
     color: black;
     font-size: 10px;
