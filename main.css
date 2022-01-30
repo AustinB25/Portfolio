@@ -3,9 +3,23 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: slategray;     
+    background-color:  slategray;     
+}
+/* Nav Bar */
+.nav-item{
+    display: inline-flex;
+}
+.nav-item ::before{
+    content: "| ";
+    color: white;
+}
+
+.nav-item :active :hover{
+    color: black;
 }
 .wrapper{
+    justify-content: center;
+    margin-top: 25px;
     width: 100%;
     height: 100%;
 }
@@ -31,11 +45,22 @@ body{
     background-color: khaki;
     float: right;
 }
+.cardHolder{
+    margin-top: 25px;
+    display: inline-flex;   
+    justify-content: space-evenly;  
+    max-height: fit-content;
+    width: 100%;
+    }
+.card{
+    padding: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .proficiencies{
     display: flex;
     height: 150px;
-    width: 100%;
-    background-color: whitesmoke;   
+    width: 100%;     
     opacity: .75;
     border-radius: 3em;     
     }
@@ -98,37 +123,10 @@ body{
     height: 500px;
     float: right;
     margin: auto;
-    text-align: center;
+    text-align: center;    
+    border-color: black;
 }
-.inputContainer{
-    width:50%;
-    height: 450px;
-    background-color: rgb(245, 245, 238);
-    margin: auto;
-    padding-top: 25px;
-    box-shadow:2px 2px 3px black;
-    border-radius: 1.25em;
-}
-.inputContainer button{
-    margin-top: 15px;
-    height: 35px;
-    width: 100px;
-}
-.userContact ul{
-    list-style: none;
-}
-.nameInput input{
-    width: 39%;
-    height: 25px;
-}
-.emailInput input{
-    width:80%;
-    height: 25px;
-}
-.messageInput input{
-    width: 80%;
-    height: 150px;
-}
+
 
 span{
     color: black;
