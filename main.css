@@ -24,26 +24,28 @@ body{
     height: 100%;
 }
 .containerOne{
-    display: flex;
-   
+    display: flex;   
+    justify-content: space-evenly;  
 }
-.topLeft{ 
-  margin: auto;
-  
-}
-.mainPic{
-    margin: auto;
+.mainPic{    
+    margin-left: auto;
+    margin-right: auto;
 }
 .mainPic img{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 350px;
     height: 350px; 
     border-radius: 15em;
 }
 .topRight{
-    margin: auto; 
-    width: 350px;    
-    background-color: khaki;
-    float: right;
+    margin-top: 95px;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 300px;    
+    box-shadow: 1px, 1px, 5px,black;    
+    text-align: center;    
 }
 .cardHolder{
     margin-top: 25px;
@@ -96,26 +98,18 @@ body{
 .contactMe{
     margin-top:30px;    
     display: flex;
+    
 }
 
 .myInfo{
-   
+    box-shadow:2px 2px 3px black;
     width:45%;
-    height: 500px; 
+    height: fit-content; 
     margin: auto;  
     text-align: center;
 }
-.infoContainer{
-    width:50%;
-    height: 450px;
-    background-color: rgb(245, 245, 238);
-    margin: auto;
-    padding-top: 25px;
-    box-shadow:2px 2px 3px black;
-    border-radius: 1.25em;
-}
 .myInfo img{
-    height: 100px;
+    height: 75px;
     width: 100px;
 }
 .userContact{
